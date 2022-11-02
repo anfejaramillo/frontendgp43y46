@@ -105,4 +105,15 @@ function getData(url, headers, method, data) {
     return categories;
 }
 
-export default getData;
+function getCategoryById(id) {
+    let result = null;
+    for (let i = 0; i < categories.length; i++) {
+        if (categories[i].id.toString() === id.toString()) {
+            result = categories[i];
+            break;
+        }
+    }
+    return result;
+}
+
+export { getData, getCategoryById };

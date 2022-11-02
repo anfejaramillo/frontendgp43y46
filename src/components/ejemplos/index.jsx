@@ -13,6 +13,9 @@ function IndexEjemplos(props) {
                         Ejemplo Componente TIPO FUNCION
                     </Link>
                 </li>
+                <li>
+                    <Link to={"/ejemplos/hooks"}>Ejemplo Hooks</Link>
+                </li>
             </ul>
         </div>
     );

@@ -1,5 +1,7 @@
 import Table from "../table/table";
-import getData from "../../js/getData";
+import { getData } from "../../js/getData";
+import MainPage from "../table/mainPage";
+
 function IndexCategorias(props) {
     let data = getData("url", {}, "get", {});
 
@@ -9,7 +11,7 @@ function IndexCategorias(props) {
                 <h3>Categorias</h3>
                 <p>Bienvenido a la pagina de categorias</p>
             </div>
-            <Table
+            <MainPage
                 data={data}
                 name={"Lista de Categorias"}
                 columns={["id", "name", "description"]}
